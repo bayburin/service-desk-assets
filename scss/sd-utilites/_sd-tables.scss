@@ -1,0 +1,50 @@
+//
+// Extended Basic Bootstrap table
+//
+
+.table {
+  margin-bottom: $spacer-h;
+  //
+  //th,
+  //td {
+  //  padding: $table-cell-padding;
+  //  vertical-align: top;
+  //  border-top: $table-border-width solid $table-border-color;
+  //}
+  //
+  //thead th {
+  //  vertical-align: bottom;
+  //  border-bottom: (2 * $table-border-width) solid $table-border-color;
+  //}
+  //
+  //tbody + tbody {
+  //  border-top: (2 * $table-border-width) solid $table-border-color;
+  //}
+}
+
+//.table th {
+//  color: $blue;
+//  background-color: $gray-white;
+//  border-bottom: $border-width solid $gray-light !important;
+//}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  col, td, th {
+    @for $i from 1 through $grid-columns {
+      &.col#{$infix}-#{$i} {
+        flex: none;
+        position: initial;
+      }
+    }
+
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      @for $i from 1 through $grid-columns {
+        &.col#{$infix}-#{$i} {
+          width: 100% / $grid-columns * $i;
+        }
+      }
+    }
+  }
+}

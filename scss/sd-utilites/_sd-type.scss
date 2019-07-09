@@ -1,0 +1,106 @@
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+  font-weight: 400;
+  line-height: 1.2857em;
+  color: $blue-dark;
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+  font-family: $font-family-sans-serif;
+  line-height: 1;
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+  font-weight: 600;
+}
+h4, .h4 {
+  font-size: $h4-font-size;
+  font-weight: 600;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+  font-family: $font-family-sans-serif;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+  font-weight: 600;
+}
+
+* ~ h1, * ~ .h1,
+* ~ h2, * ~ .h2,
+* ~ h3, * ~ .h3,
+* ~ h4, * ~ .h4,
+* ~ h5, * ~ .h5,
+* ~ h6, * ~ .h6 {
+  //margin-top: 1.6875rem; // 27px
+  margin-top: 2.255rem; // 36px
+}
+
+//
+// Code
+//
+
+pre,
+code,
+kbd,
+samp {
+  font-family: $font-family-monospace;
+  font-size: $font-size-base;
+}
+
+.text-light a {
+  color: $light;
+}
+
+//
+// Category list
+//
+
+.sd-category-list .sd-category-list-item {
+  padding-left: 77px;
+}
+
+//
+// Definition list
+//
+
+.sd-dlist-divider-b {
+  margin-bottom: $spacer-h * 2;                     // 36px
+}
+
+.sd-dlist-divider-b dt {
+  font-weight: normal;
+  padding-top: $spacer-h;                           // 18px
+  margin-top: $spacer-h;
+  border-top: $border-width solid $border-color;
+  margin-bottom: $spacer-h;
+}
+
+.sd-dlist-divider-b dd {
+  margin-bottom: $spacer-h;
+}
+
+.sd-dlist-divider-b dt:first-child,
+app-dynamic-template-content:first-child .sd-dlist-divider-b dt {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+

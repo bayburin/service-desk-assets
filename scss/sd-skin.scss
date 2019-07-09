@@ -1,0 +1,152 @@
+// Base Mixins
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+
+
+// Fonts
+/*
+ *
+ * ====================
+ * Fonts Style
+ * ====================
+ *
+ */
+@import "font.scss";
+
+// Variables
+@import "variables";
+
+//MDI
+/*
+ *
+ * ====================
+ * MDI Icons Style
+ * ====================
+ *
+ */
+@import "../../../node_modules/@mdi/font/scss/materialdesignicons.scss";
+.mdi-24px.mdi-set,
+.mdi-24px.mdi::before {
+  line-height: 1;
+}
+
+.mdi-24px {
+  height: 24px;
+}
+
+//custom
+/*
+ *
+ * ====================
+ * Custom style
+ * ====================
+ *
+ */
+@import "sd-utilites/sd-mixins";
+@import "sd-utilites/sd-type";
+@import "sd-utilites/sd-icons";
+@import "sd-utilites/sd-masonry";
+@import "sd-utilites/sd-forms";
+@import "sd-utilites/sd-input-group";
+@import "sd-utilites/sd-buttons";
+@import "sd-utilites/sd-nav";
+@import "sd-utilites/sd-breadcrumb";
+@import "sd-utilites/sd-tables";
+@import "sd-utilites/sd-custom-form";
+@import "sd-utilites/sd-dropdown";
+@import "sd-utilites/sd-spinners";
+@import "sd-utilites/sd-pagination";
+
+
+/*
+ * Layout
+ */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.sd-target {
+  flex: 1 0 auto;
+}
+
+.sd-footer {
+  flex-shrink: 0;
+}
+
+.container section {
+  padding: $spacer-h 0;
+  margin-bottom: $spacer-h;
+  border-bottom: 1px solid $border-color;
+}
+
+.container section:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+//
+// Links
+//
+
+.sd-link {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  background-color: transparent;
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    cursor: pointer;
+  }
+}
+
+/*
+ * Brand
+ */
+.sd-brand,
+.sd-group-icon {
+  padding: .5rem !important;
+}
+
+.sd-favorite-questions {
+  margin-top: 2.5rem;
+}
+
+/*
+ * Buttons + Forms
+ */
+
+.sd-btn-icon-24 {
+  padding-top: .4375rem;      // 7px;
+  padding-bottom: .4375rem;   // 7px;
+}
+
+/*
+ * Jumbotron
+ */
+
+.jumbotron {
+  padding: $jumbotron-padding;
+}
+
+/*
+ * Margin and padding vertical with step by base line-height
+ */
+@include make-spasers-h();
+
+
+
+

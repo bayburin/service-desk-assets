@@ -1,0 +1,28 @@
+//.input-group-prepend { margin-right: -$input-border-width; }
+//.input-group-append,
+//.input-group-prepend {
+//  padding: $input-padding-y .5rem;
+//}
+.input-group-prepend {
+  margin-right: 0;
+}
+//.input-group-append {
+//  margin-left: -$input-border-width;
+//}
+.input-group-append {
+  margin-left: 0;
+}
+
+.input-group-prepend .btn,
+.input-group-append .btn,
+.input-group-prepend.input-group-text,
+.input-group-append.input-group-text {
+  padding: 0 .5rem;
+}
+
+.input-group-append .btn-link,
+.input-group-prepend .btn-lin {
+  color: $gray-base;
+}
+
+

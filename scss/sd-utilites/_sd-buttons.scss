@@ -1,0 +1,14 @@
+
+//
+// Alternate buttons
+//
+
+//@each $color, $value in $theme-colors {
+//  .btn-#{$color} {
+//    @include button-variant($value, darken($value, 20%));
+//  }
+//}
+
+.btn-link:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.form-group label {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.col-form-label {
+  font-family: Roboto, Arial, sans-serif;
+  color: $primary;
+}
+
+.is-valid,
+.is-invalid {
+  background-image: none !important;
+}
+
+// open / close textarea from status checkbox
+
+.sd-custom-checkbox-add-textarea {
+  margin-top: #{$form-group-margin-bottom};
+  margin-left: -#{$custom-control-gutter + $custom-control-indicator-size};
+  display: none;
+  opacity: 0;
+  //@include transition($transition-base);
+  -webkit-animation:  fade-out 0.2s ease-in-out 1;
+  -moz-animation:     fade-out 0.2s ease-in-out 1;
+  -o-animation:       fade-out 0.2s ease-in-out 1;
+  animation:          fade-out 0.2s ease-in-out 1;
+
+}
+
+.custom-control-input:checked ~ .sd-custom-checkbox-add-textarea {
+  display: block;
+  opacity: 1;
+  //@include transition($transition-base);
+  -webkit-animation:  fade-in 0.2s ease-in-out 1;
+  -moz-animation:     fade-in 0.2s ease-in-out 1;
+  -o-animation:       fade-in 0.2s ease-in-out 1;
+  animation:          fade-in 0.2s ease-in-out 1;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-out {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -1,0 +1,21 @@
+.sd-category-list .sd-category-list-item a {
+  color: $gray-black;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.tab-content {
+  padding: $spacer-h * 1.5 0 0;
+}
+
+.nav-tabs .nav-link {
+  outline: none;
+}
+
+.nav-pills {
+  .nav-link {
+    outline: none;
+  }
+}
