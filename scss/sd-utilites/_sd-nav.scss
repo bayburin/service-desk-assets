@@ -2,7 +2,7 @@
   color: $gray-black;
 }
 
-.nav-link:hover {
+.nav-link:not(.without-link):hover {
   cursor: pointer;
 }
 

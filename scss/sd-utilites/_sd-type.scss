@@ -80,27 +80,31 @@ samp {
 //
 // Definition list
 //
-
 .sd-dlist-divider-b {
-  margin-bottom: $spacer-h * 2;                     // 36px
-}
+  .sd-list-item {
+    padding: $spacer-h;
+    border-top: 1px solid $border-color;
 
-.sd-dlist-divider-b dt {
-  font-weight: normal;
-  padding-top: $spacer-h;                           // 18px
-  margin-top: $spacer-h;
-  border-top: $border-width solid $border-color;
-  margin-bottom: $spacer-h;
-}
+    .sd-list-answer {
+      margin-top: $spacer-h;
+    }
+  }
 
-.sd-dlist-divider-b dd {
-  margin-bottom: $spacer-h;
-}
+  .active-item {
+    background-color: $gray-white !important;
+  }
 
-.sd-dlist-divider-b dt:first-child,
-app-dynamic-template-content:first-child .sd-dlist-divider-b dt {
-  border-top: none;
-  padding-top: 0;
-  margin-top: 0;
+  app-question-page-content {
+    white-space: pre-wrap;
+  }
+
+  app-question-page-content:first-child .sd-list-item,
+  app-dynamic-template-content:first-child .sd-list-item {
+    border-top: none;
+  }
+
+  app-dynamic-template-content:not(:first-child) app-question-page-content .sd-list-item{
+    border-top: 1px solid $gray-light;
+  }
 }
 

@@ -43,6 +43,8 @@
  * ====================
  *
  */
+@import "ng-bootstrap/ng-typeahead-window";
+@import "ng-bootstrap/ng-rating";
 @import "sd-utilites/sd-mixins";
 @import "sd-utilites/sd-type";
 @import "sd-utilites/sd-icons";
@@ -57,13 +59,16 @@
 @import "sd-utilites/sd-dropdown";
 @import "sd-utilites/sd-spinners";
 @import "sd-utilites/sd-pagination";
-
+@import "sd-utilites/sd-rows";
+@import "sd-utilites/sd-cards";
+@import "sd-utilites/sd-sections";
 
 /*
  * Layout
  */
 html {
   height: 100%;
+  overflow-y: scroll;
 }
 
 body {
@@ -100,7 +105,6 @@ app-root {
 //
 // Links
 //
-
 .sd-link {
   color: $link-color;
   text-decoration: $link-decoration;
@@ -111,6 +115,11 @@ app-root {
     text-decoration: $link-hover-decoration;
     cursor: pointer;
   }
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
 }
 
 /*
@@ -128,7 +137,6 @@ app-root {
 /*
  * Buttons + Forms
  */
-
 .sd-btn-icon-24 {
   padding-top: .4375rem;      // 7px;
   padding-bottom: .4375rem;   // 7px;
@@ -137,7 +145,6 @@ app-root {
 /*
  * Jumbotron
  */
-
 .jumbotron {
   padding: $jumbotron-padding;
 }
@@ -147,6 +154,14 @@ app-root {
  */
 @include make-spasers-h();
 
+.search-title {
+  font-size: 20px;
+}
 
-
+.notification-block {
+  width: 500px;
+  left: unset;
+  top: 20px;
+  right: 20px;
+}
 
