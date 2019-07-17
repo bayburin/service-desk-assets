@@ -18,12 +18,17 @@
     }
   }
 
+  .card-body {
+    max-height: 600px;
+    overflow: auto;
+  }
+
   .user-dashboard-menu-component {
     color: $gray-black;
     background-color: $white;
     position: absolute;
     width: 100%;
-    z-index: 99999;
+    z-index: 999;
   }
 
   .notification-row {
