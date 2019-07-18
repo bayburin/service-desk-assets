@@ -1,5 +1,5 @@
 @import "../../../node_modules/bootstrap/scss/functions.scss";
-//@import "../../../node_modules/bootstrap/scss/variables.scss";
+// @import "../../../node_modules/bootstrap/scss/variables.scss";
 
 
 // Colors system
@@ -369,7 +369,7 @@ $custom-select-indicator:           str-replace(url("data:image/svg+xml,%3csvg x
 $custom-control-indicator-border-width:         $input-border-width;
 $custom-control-indicator-checked-color:        $gray-base;
 
-$custom-control-indicator-size:                 1.125rem;   // 8px
+// $custom-control-indicator-size:                 1.125rem;   // 8px
 $custom-control-indicator-border-color:         $gray-base;
 $custom-control-indicator-checked-color:        $gray-base;
 $custom-control-indicator-checked-bg:           $white;
