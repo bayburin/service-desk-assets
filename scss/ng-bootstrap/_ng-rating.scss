@@ -1,0 +1,10 @@
+ngb-rating {
+  .star {
+    font-size: 1.2rem;
+    color: $icon-color;
+  }
+
+  .filled {
+    color: $active-star-color;
+  }
+}
