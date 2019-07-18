@@ -20,9 +20,11 @@
 
 @import "../variables";
 
-main, app-breadcrumb {
+main,
+app-breadcrumb,
+.user-dashboard-menu-component .card-body {
   i {
-    color: $icon-color !important;
+    color: $icon-color;
   }
 }
 
@@ -91,5 +93,5 @@ main, app-breadcrumb {
 }
 
 button.btn-primary i {
-  color: $white;
+  color: $white !important;
 }
