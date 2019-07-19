@@ -64,6 +64,7 @@
 @import "sd-utilites/sd-cards";
 @import "sd-utilites/sd-sections";
 @import "sd-utilites/sd-user-dashboard-menu";
+@import "sd-utilites/sd-toasts";
 
 /*
  * Layout
@@ -161,7 +162,6 @@ a.disabled {
 }
 
 .notification-block {
-  width: 500px;
   left: unset;
   top: 20px;
   right: 20px;
