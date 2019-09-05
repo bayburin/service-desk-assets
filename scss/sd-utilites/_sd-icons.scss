@@ -22,7 +22,8 @@
 
 main,
 app-breadcrumb,
-.user-dashboard-menu-component .card-body {
+.user-dashboard-menu-component .card-body,
+.modal-dialog {
   i {
     color: $icon-color;
   }

@@ -45,6 +45,7 @@
  */
 @import "ng-bootstrap/ng-typeahead-window";
 @import "ng-bootstrap/ng-rating";
+@import "ng-bootstrap/ng-accordion";
 @import "sd-utilites/sd-mixins";
 @import "sd-utilites/sd-type";
 @import "sd-utilites/sd-icons";
@@ -179,4 +180,8 @@ a.disabled {
 
 .on-top {
   z-index: $zindex-modal + 1;
+}
+
+.pointer {
+  cursor: pointer;
 }

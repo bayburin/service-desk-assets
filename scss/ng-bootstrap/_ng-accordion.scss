@@ -1,0 +1,9 @@
+.accordion {
+  & > .card {
+    border-bottom: 1px solid $border-color !important;
+  }
+
+  .card + .card {
+    border-top: 0;
+  }
+}
