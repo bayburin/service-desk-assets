@@ -99,7 +99,8 @@ samp {
   }
 
   app-question-page-content:first-child .sd-list-item,
-  app-dynamic-template-content:first-child .sd-list-item {
+  app-dynamic-template-content:first-child .sd-list-item,
+  app-question:first-child .sd-list-item {
     border-top: none;
   }
 
