@@ -5,7 +5,6 @@
   border-top: none;
 
   .dropdown-item-content {
-    max-width: 350px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -13,5 +12,9 @@
 }
 
 .dropdown-admin-answer {
-  min-width: 300px;
+  width: 450px;
+
+  .invalid-feedback {
+    white-space: normal;
+  }
 }
