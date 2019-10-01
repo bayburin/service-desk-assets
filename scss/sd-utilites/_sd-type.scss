@@ -85,6 +85,23 @@ samp {
     padding: $spacer-h;
     border-top: 1px solid $border-color;
 
+    .sd-list-question {
+      display: flex;
+      align-items: center;
+
+      .question {
+        flex: 1;
+
+        .question-block {
+          width: 100%;
+
+          button.toggle-correction {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
     .sd-list-answer {
       margin-top: $spacer-h;
     }
