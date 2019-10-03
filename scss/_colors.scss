@@ -15,8 +15,8 @@ $color-variants: (
 //  Add color variants to $colors
 @each $color-name, $color in $colors {
   @each $variant-name, $percent in $color-variants {
-      $mix-color: if($percent < 0%, white, black);
-      $colors: map-merge($colors, ($color-name+'-'+$variant-name: mix($color, $mix-color, abs($percent))));
+    $mix-color: if($percent < 0%, white, black);
+    $colors: map-merge($colors, ($color-name+'-'+$variant-name: mix($color, $mix-color, abs($percent))));
   }
 }
 
@@ -51,78 +51,78 @@ $enable-hover-media-query: true;
 }
 
 @mixin hover-focus {
-@if $enable-hover-media-query {
-  &:focus {
-    @content;
+  @if $enable-hover-media-query {
+    &:focus {
+      @content;
+    }
+    @include hover { @content; }
+  } @else {
+    &:focus,
+    &:hover {
+      @content;
+    }
   }
-  @include hover { @content; }
-} @else {
-  &:focus,
-  &:hover {
-    @content;
-  }
-}
 }
 
 @mixin text-emphasis-variant($parent, $color) {
-#{$parent} {
-  color: $color !important;
-}
-a#{$parent} {
-  @include hover-focus {
-    color: darken($color, 10%) !important;
+  #{$parent} {
+    color: $color !important;
   }
-}
+  a#{$parent} {
+    @include hover-focus {
+      color: darken($color, 10%) !important;
+    }
+  }
 }
 
 @mixin bg-variant($parent, $color) {
-#{$parent} {
-  background-color: $color !important;
-}
-a#{$parent} {
-  @include hover-focus {
-    background-color: darken($color, 10%) !important;
+  #{$parent} {
+    background-color: $color !important;
   }
-}
+  a#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
 }
 
 // Color contrast - from Bootstrap 4 utilities - no change
 @function color-yiq($color) {
-$r: red($color);
-$g: green($color);
-$b: blue($color);
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
 
-$yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
 
-@if ($yiq >= 150) {
-  @return #111;
-} @else {
-  @return #fff;
-}
+  @if ($yiq >= 150) {
+    @return $gray-black;
+  } @else {
+    @return #fff;
+  }
 }
 
 /* from Bootstrap 4 utilities - replaced $theme-colors with $colors */
 
 // text colors
 @each $color, $value in $colors {
-@include text-emphasis-variant(".text-#{$color}", $value);
+  @include text-emphasis-variant(".text-#{$color}", $value);
 }
 
 // background colors
 @each $color, $value in $colors {
-@include bg-variant(".bg-#{$color}", $value);
+  @include bg-variant(".bg-#{$color}", $value);
 }
 
 // background text contrast
 @each $color, $value in $colors {
-.bg-#{$color} {
-  color: color-yiq($value);
-}
+  .bg-#{$color} {
+    color: color-yiq($value);
+  }
 }
 
 // border colors
 @each $color, $value in $colors {
-.border-#{$color} {
-  border-color: $value !important;
-}
+  .border-#{$color} {
+    border-color: $value !important;
+  }
 }
