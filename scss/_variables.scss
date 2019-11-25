@@ -137,7 +137,7 @@ $enable-deprecation-messages:                 true !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:      RobotoLight, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-family-sans-serif:      Roboto, RobotoLight, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 $font-family-monospace:       "Courier New", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 $font-size-base:              .875rem; // Assumes the browser default, typically `16px`
