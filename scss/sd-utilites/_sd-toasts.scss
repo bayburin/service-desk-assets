@@ -1,0 +1,9 @@
+.toast {
+  border-radius: 0;
+  background-color: $white;
+  width: 350px;
+
+  i:not(.close-notification) {
+    color: $icon-color;
+  }
+}

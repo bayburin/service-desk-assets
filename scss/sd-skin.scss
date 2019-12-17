@@ -17,6 +17,9 @@
 // Variables
 @import "variables";
 
+// Colors
+@import "colors";
+
 //MDI
 /*
  *
@@ -45,6 +48,7 @@
  */
 @import "ng-bootstrap/ng-typeahead-window";
 @import "ng-bootstrap/ng-rating";
+@import "ng-bootstrap/ng-accordion";
 @import "sd-utilites/sd-mixins";
 @import "sd-utilites/sd-type";
 @import "sd-utilites/sd-icons";
@@ -60,8 +64,23 @@
 @import "sd-utilites/sd-spinners";
 @import "sd-utilites/sd-pagination";
 @import "sd-utilites/sd-rows";
+@import "sd-utilites/sd-alerts";
 @import "sd-utilites/sd-cards";
 @import "sd-utilites/sd-sections";
+@import "sd-utilites/sd-user-dashboard-menu";
+@import "sd-utilites/sd-toasts";
+@import "sd-utilites/sd-modal";
+@import "sd-utilites/sd-jumbotron";
+@import "sd-utilites/sd-badge";
+
+/*
+ *
+ * ====================
+ * ng-select
+ * ====================
+ *
+ */
+ @import "ng-select";
 
 /*
  * Layout
@@ -75,6 +94,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  line-height: 1.42857;
 }
 
 app-root {
@@ -159,9 +179,15 @@ a.disabled {
 }
 
 .notification-block {
-  width: 500px;
   left: unset;
   top: 20px;
   right: 20px;
 }
 
+.on-top {
+  z-index: $zindex-modal + 1;
+}
+
+.pointer {
+  cursor: pointer;
+}

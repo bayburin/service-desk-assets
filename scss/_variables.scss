@@ -1,5 +1,5 @@
 @import "../../../node_modules/bootstrap/scss/functions.scss";
-//@import "../../../node_modules/bootstrap/scss/variables.scss";
+// @import "../../../node_modules/bootstrap/scss/variables.scss";
 
 
 // Colors system
@@ -34,6 +34,7 @@ $colors: (
         "blue-dark":        $blue-dark,
         "gray-black":       $gray-black,
         "render-unmasked":  $render-unmasked,
+        "yellow":           $active-star-color
 );
 
 $primary:   $blue;
@@ -137,7 +138,7 @@ $enable-deprecation-messages:                 true !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:      RobotoLight, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-family-sans-serif:      Roboto, RobotoLight, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 $font-family-monospace:       "Courier New", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 $font-size-base:              .875rem; // Assumes the browser default, typically `16px`
@@ -369,7 +370,7 @@ $custom-select-indicator:           str-replace(url("data:image/svg+xml,%3csvg x
 $custom-control-indicator-border-width:         $input-border-width;
 $custom-control-indicator-checked-color:        $gray-base;
 
-$custom-control-indicator-size:                 1.125rem;   // 8px
+// $custom-control-indicator-size:                 1.125rem;   // 8px
 $custom-control-indicator-border-color:         $gray-base;
 $custom-control-indicator-checked-color:        $gray-base;
 $custom-control-indicator-checked-bg:           $white;

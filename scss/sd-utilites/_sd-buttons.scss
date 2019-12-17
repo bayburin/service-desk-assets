@@ -12,3 +12,12 @@
 .btn-link:hover {
   cursor: pointer;
 }
+
+.align-button-content {
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-right: $spacer * .25;
+  }
+}

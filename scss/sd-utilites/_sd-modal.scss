@@ -1,0 +1,19 @@
+body.modal-open[style] {
+  padding-right: 0px !important;
+}
+
+.modal-holder{
+  animation-name: modal;
+  animation-duration: 0.3s;
+}
+
+@keyframes modal {
+  0% {
+    transform: translateY(-3%);
+    opacity: 0
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1
+  }
+}

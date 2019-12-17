@@ -1,0 +1,58 @@
+.user-dashboard-menu-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  .card-header {
+    padding: 0.25rem 1.25rem;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -25px;
+      right: 130px;
+      border-width: 13px;
+      border-style: solid;
+      border-color: transparent transparent $white;
+    }
+  }
+
+  .card-body {
+    max-height: 600px;
+    overflow: auto;
+  }
+
+  .user-dashboard-menu-component {
+    color: $gray-black;
+    background-color: $white;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .notification-row {
+    padding: $spacer-h;
+  }
+
+  .notification-row + .notification-row {
+    border-top: 1px solid $border-color;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+
+    .nav-item {
+      border-bottom: 1px solid $border-color;
+    }
+
+    .nav-link:hover {
+      border-color: transparent;
+    }
+
+    .nav-link.active {
+      border: none;
+      border-bottom: 4px solid $blue-dark;
+    }
+  }
+}
