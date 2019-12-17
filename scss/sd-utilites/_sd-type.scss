@@ -165,6 +165,14 @@ samp {
   }
 }
 
+.row-inline-content {
+  display: inline;
+
+  & > * + * {
+    margin-left: $spacer-h * .25;
+  }
+}
+
 .dynamic-block > *:last-child {
   margin-right: $spacer-h * .25;
 }
