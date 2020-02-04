@@ -1,3 +1,6 @@
+@import "../../../../node_modules/bootstrap/scss/_tables.scss";
+@import "../templates.scss";
+
 //
 // Headings
 //
@@ -111,6 +114,13 @@ samp {
       margin-top: $spacer-h;
       margin-left: $spacer-h * 3;
 
+      .answer-block .answer-content {
+        @extend %markdown;
+
+        display: flex;
+        flex-direction: column;
+      }
+
       .answer-block + .answer-block {
         margin-top: $spacer-h;
       }
@@ -121,9 +131,9 @@ samp {
     background-color: $gray-white !important;
   }
 
-  app-question-page-content, app-question {
-    white-space: pre-wrap;
-  }
+  // app-question-page-content, app-question {
+  //   white-space: pre-wrap;
+  // }
 
   app-question-page-content:first-child .sd-list-item,
   app-dynamic-template-content:first-child .sd-list-item,
@@ -179,4 +189,12 @@ samp {
 
 .additional-text {
   color: $icon-color;
+}
+
+.preview-ticket-form {
+  @extend %markdown;
+
+  margin-top: $spacer-h * 0.25;
+  padding: $spacer-h;
+  border: 2px solid $border-color;
 }

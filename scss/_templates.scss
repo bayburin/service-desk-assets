@@ -1,0 +1,13 @@
+@import "../../../node_modules/bootstrap/scss/_tables.scss";
+
+%markdown {
+  table { @extend .table; }
+  p {
+    margin-bottom: 0;
+
+    & + * {
+      margin-top: 1rem;
+    }
+  }
+  ol, ul, dl { margin-bottom: 0; }
+}
