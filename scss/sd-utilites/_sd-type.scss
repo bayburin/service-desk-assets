@@ -127,9 +127,9 @@ samp {
     }
   }
 
-  .active-item {
-    background-color: $gray-white !important;
-  }
+  // .active-item {
+  //   background-color: $gray-white !important;
+  // }
 
   // app-question-page-content, app-question {
   //   white-space: pre-wrap;
@@ -197,4 +197,37 @@ samp {
   margin-top: $spacer-h * 0.25;
   padding: $spacer-h;
   border: 2px solid $border-color;
+  // background-color: $gray-white;
+}
+
+.question-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  .ask-mainbar {
+    flex: 1;
+    min-width: 500px;
+    width: calc(100% - #{$sidebar-width} - 25px);
+  }
+
+  .markdown-helpbar {
+    width: $sidebar-width;
+    margin-left: 24px;
+
+    .scroller {
+      z-index: 3;
+      width: 365px;
+
+      .scroller-header {
+        padding: $spacer-h;
+        border: 1px solid $border-color;
+        border-bottom: 0;
+      }
+
+      .scroller-body {
+        padding: $spacer-h;
+        border: 1px solid $border-color;
+      }
+    }
+  }
 }

@@ -10,4 +10,18 @@
     }
   }
   ol, ul, dl { margin-bottom: 0; }
+  pre {
+    background-color: $gray-white !important;
+  }
+  pre[class*=language-] {
+    border-radius: 0;
+  }
+  pre[class*=language-], code[class*=language-] {
+    color: #2c2c2c;
+  }
+  blockquote {
+    padding: 0 1em;
+    color: darken($gray-white, 40%);
+    border-left: 0.25em solid darken($gray-white, 30%);
+  }
 }
