@@ -231,3 +231,33 @@ samp {
     }
   }
 }
+
+app-answer-accessor {
+  height: 100% !important;
+  padding: 0 !important;
+}
+
+.markdown-answer-block {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.markdown-buttom-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid $border-color;
+
+  .markdown-button {
+    padding: 8px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .no-button {
+    width: 35px;
+  }
+}
