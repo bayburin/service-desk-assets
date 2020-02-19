@@ -200,6 +200,16 @@ samp {
   // background-color: $gray-white;
 }
 
+
+.markdown-help-page {
+  @extend %markdown;
+
+  .select {
+    background-color: darken($gray-white, 15%);
+  }
+}
+
+
 .question-form {
   display: flex;
   flex-wrap: wrap;
@@ -259,5 +269,26 @@ app-answer-accessor {
 
   .no-button {
     width: 35px;
+  }
+}
+
+ul.sidebar-list {
+  list-style: none;
+  padding: 0;
+
+  & > li {
+    margin: 12px 0;
+    cursor: pointer;
+  }
+
+  .active:before {
+    content: '';
+    position: absolute;
+    margin-left: -19px;
+    margin-top: -6px;
+    height: 30px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: $blue-dark;
   }
 }
