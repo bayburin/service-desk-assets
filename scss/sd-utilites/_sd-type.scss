@@ -122,8 +122,14 @@ samp {
         width: 100%;
       }
 
+      .responsibles-block {
+        margin-bottom: $spacer-h;
+      }
+
       .answer-block + .answer-block {
         margin-top: $spacer-h;
+        border-top: 1px solid $border-color;
+        padding-top: $spacer-h;
       }
     }
   }
